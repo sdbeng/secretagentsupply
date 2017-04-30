@@ -145,7 +145,10 @@ footer span{
 @media only screen and (max-width: 1024px){
   /* reduce headline h1 font-size*/
   .headline h1{
-    font-size: 1.5rem;
+    font-size: 1rem;
+  }
+  .headline h4{
+    font-size: 0.77rem;
   }
   /*nav display menu only*/
   nav ul:first-child{
@@ -165,5 +168,35 @@ footer span{
   .product.glasses{
     display: none;
   }
+}
+/* smaller widths - phone screen*/
+@media only screen and (max-width:470px){
+  /* make headline down bottom and take up width screen*/
+  .headline{
+    top:14.9rem;
+    width: auto;
+  }
+  /* change banner's font-size to match design */
 
+  /* product section- manke 1 product visible only */
+  .product{
+    width: 90%;
+  }
+  .product.watch,
+  .product.glasses{
+    display: none;
+  }
+  /*make location and hours elements stack on top of each other*/
+  .products,
+  .biz-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .info{
+    width: 90%;
+  }
+  /* footer text centered*/
+  footer> .container-flex{
+  }
 }
